@@ -16,7 +16,7 @@ services:
 
   # webapp
   webapp:
-    image: webapp
+    image: yuheong/webapp
     container_name: webapp
     build:
       context: ./webapp
@@ -36,7 +36,7 @@ services:
 
   # Retrieves menu
   menu-service:
-    image: menu-service
+    image: yuheong/menu-service
     container_name: menu-service
     build:
       context: ./menu_service
