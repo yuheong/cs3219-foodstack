@@ -9,5 +9,6 @@ Run ```docker-compose-up``` within this directory to automatically bring up the 
 Access the webapp on <http://localhost>, press the button to retrieve a random food item from the backend.
 
 ## Troubleshooting instructions
-1. If you encounter any CORS request issues, ensure you are on <http://localhost> instead of <http://localhost:3000>
-2. If your Docker containers aren't starting properly, bring them dwon with ```docker-compose down```. Then, run this command: ```docker-compose up -d --build``` to rebuild the containers and run in the background.
+1. If you encounter "502 Bad Gateway" on the nginx server, please wait awhile and perform a hard refresh on the page, or alternatively open <http://localhost> in Incognito to prevent cache from interfering.
+2. If you encounter any CORS request issues, ensure you are on <http://localhost> instead of <http://localhost:3000>
+3. If your Docker containers aren't starting properly, bring them dwon with ```docker-compose down```. Then, run this command: ```docker-compose up -d --build``` to rebuild the containers and run in the background.
