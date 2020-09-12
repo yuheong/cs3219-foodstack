@@ -1,7 +1,7 @@
 # Simple web server built with Nginx & Docker
 
 ## To start the server
-Run ```docker-compose-up``` within this directory to automatically bring up the 3 Docker containers:
+Run ```docker-compose up``` within this directory to automatically bring up the 3 Docker containers:
 - reverse-proxy: Nginx reverse proxy to direct incoming http requests to their respective ports
 - webapp: React Frontend application with a simple button to retrieve random food choices from the backend
 - menu-service: Simple Flask server that returns a random food item from a list of Singaporean local dishes
